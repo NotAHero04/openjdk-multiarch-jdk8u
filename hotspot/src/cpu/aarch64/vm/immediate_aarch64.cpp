@@ -124,7 +124,6 @@ u_int64_t replicate(u_int64_t bits, int nbits, int count)
 {
   // Special case nbits == 64 since the resulting shift below would result in undefined behavior
   if (nbits == 64) {
-  assert(count <= 1);
   return bits;
   }
   u_int64_t result = 0;
